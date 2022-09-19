@@ -5,38 +5,38 @@
     font-family:Arial, Helvetica, sans-serif
 }
 /* Global */
-/* #header nav {
-	position: relative;
-	bottom: 100px;
-    padding: 3px;}
-     */
 .navBackground {
-	position: relative;
-	bottom: 100px;
-    padding: 3px;
-    background-color: #fccc8373;
-	position: sticky;
-	top: 0px;
-}
+    display: flex;
+    align-items:flex-start;
+    flex: 1;
+    padding-top: 4px;
+    justify-content:left;
+    background-color: rgba(255, 193, 7);
+    opacity:0.8;
+    height:40px;
+    width: 100%;
+    top:0;
+    position:fixed;
+    z-index:99;
+    }
 .navBackground ul {
+    display: flex;
+    justify-content: space-between;
+    flex:0.7;
     list-style: none;
-    font-size:1.5 rem;
 }
 .navBackground li {
     display: inline-block;
-    width: 20%;
     position:relative;
 }
-.navBackground li:hover{
-    background-color: #ffa800;
-}
 .navBackground a {
-    font-size: 1.3rem;
     text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
     color:#000;
 }
 .navBackground a:hover{
-    color: #73dddd;
+    color: #5782e8;
 }
 .navBackground ul ul {
     position: relative;
@@ -44,8 +44,8 @@
 }
 .navBackground ul ul li {
     display: block;
-    width:100%;
-    padding: 10px;
+    width:90%;
+    padding: 5px;
 }
 .navBackground ul ul li a {
     color: #000;
@@ -54,8 +54,63 @@
 .navBackground ul li:hover ul {
     position: absolute;
     display:block;
-    background-color: #fccc83
+    background-color: rgba(255, 193, 7);
 }
+@media (max-width:768px){
+    .navBackground {
+        display: flex;
+        align-items:flex-start;
+        flex: 1;
+        padding-top: 2px;
+        justify-content:left;
+        background-color: rgba(255, 193, 7);
+        opacity:0.8;
+        height:25px;
+        width: 100%;
+        top:0;
+        position:fixed;
+        z-index:98;
+        }
+    .navBackground ul {
+        display: flex;
+        justify-content: space-between;
+        flex:0.7;
+        list-style: none;
+    }
+    .navBackground li {
+        display: inline-block;
+        position:relative;
+    }
+    .navBackground a {
+        text-decoration: none;
+        font-size: 0.7em;
+        font-weight: 700;
+        color:#000;
+    }
+    .navBackground a:hover{
+        color: #5782e8;
+    }
+    .navBackground ul ul {
+        position: relative;
+        display: none;
+    }
+    .navBackground ul ul li {
+        display: block;
+        width:90%;
+        padding: 2px;
+    }
+    .navBackground ul ul li a {
+        color: #000;
+    }
+    
+    .navBackground ul li:hover ul {
+        position: absolute;
+        display:block;
+        background-color: rgba(255, 193, 7);
+    }
+
+}
+  
 #main{
     height: 250px;
     width: auto;    
@@ -70,49 +125,37 @@
     background-color: #fccc8385;
 }
 #footer{
-    padding:5px;
-    margin: 5px;
-    height: auto;
-    width: auto;
     border-top: 3px solid #000;
-    justify-content:space-between;
-    align-items: center;
     }
-#footer .redes{
-    display: inline-block;
-    width: 350px;    
-}
-#footer .redes img{
+
+#footer img{
     width: 20px;
 }
 
-#footer .redes ul{
+#footer ul{
     margin: 6px;
     list-style: none;
     color: #000;
 }
-#footer .redes ul li a{
+#footer ul li a{
     margin: 6px;
     text-decoration:none;
     color: #000;
 }
 
-#footer .news{
-   display: inline-block;
-   text-align: justify;
-}
-#footer .news p{
+
+#footer p{
     margin: 6px;
  }
 
-#footer .news form input{
+#footer form input{
     margin: 6px;
     padding: 4px;
     height: 30px;
     background-color: #fff;
     Border:1px solid #000;
  }
- #footer .news form input.button:hover{
+ #footer form input.button:hover{
     background-color: #000;
     Border:1px solid #fff;
     color:#fff
@@ -120,101 +163,40 @@
  
 /* index */
 .headerindex{
-    height: 400px;
+    height:500px;
     width: auto;    
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/banner.jpg);
     background-size:cover;
-    padding: 250px 5px 0px 5px;
-}
-.headerindex h1{
+    background-position:center;
+    padding: 5% 25% 0 25%;
+}.headerindex h1{
     font-size: 32px;
     font-weight: 900;
     color:#1d1d1d;
-    background-color: #fccc8385;
+    text-align: center;
+    
 }
-#section{
-    height: 300px;
-    width: auto;
-      
-}
-#section .article{
-    width: 69%;
-    height: 300px;
-    padding-top: 210px;
-    display: inline-block;
-    background-color: #fccc83;
-    text-align: start;
-}
-#section .article:hover{
-    background-color: #ff87b0;
-}
-#section .article h3{
-    padding: 60px 5px 30px 60px;
-    font-size: 32px;
+@media (max-width:768px){
+    .headerindex{
+        height:300px;
+        width: auto;    
+        background-image: url(../img/banner.jpg);
+        background-size:cover;
+        background-position:center;
+        padding: 7% 25% 0 25%;
+    }
+    .headerindex h1{
+        font-size: 18px;
 }
 
-#section .article a{
-    text-decoration:underline;
-    text-decoration-color: #73dddd;
-    color:#000;
 }
-#section .article1{
-    width: 69%;
-    height: 300px;
-    padding-top: 202px;
-    display: inline-block;
-    background-color: #73dddd;
-}
-#section .article1:hover{
-    background-color: #ff87b0;
-}
-#section .article1 h3{
-    padding: 60px 5px 30px 60px;
-    font-size: 32px;
-}
-#section .article1 p{
-    padding-left: 80px;
-    font-size: 18px;
-}
-#section .article1 a{
-    text-decoration:underline;
-    text-decoration-color: #ffa800;
-    color:#000;
-}
-#section .imagen{
-    height: 299px;
-    width: 25%;
-    display: inline-block;
-    background-image: url(../img/MI.jpg);
-    background-size:contain;
-    z-index: -1;
-}
-#section .imagen1{
-    height: 300px;
-    width: 25%;
-    display: inline-block;
-    background-image: url(../img/fondochico.png);
-    background-size:contain;
-    z-index: -1;
-}
-#section .aboutme{
-    padding:40px 15px 15px 30px;
-    display:inline-block;
-}
-#section .aboutme h2{ 
-    padding: 15px;
-}
-#section .aboutme p{
-    padding: 15px;
-    margin-bottom: 20px;
-}
-#section .aboutme button{
+button{
         padding: 5px;
         height: 30px;
         background-color: #fff;
         Border:1px solid #000;    
-}
-#section .aboutme button:hover{
+    }
+button:hover{
     background-color: #000;
     Border:1px solid #fff;
     color:#fff;    
