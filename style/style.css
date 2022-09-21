@@ -110,20 +110,6 @@
     }
 
 }
-  
-#main{
-    height: 250px;
-    width: auto;    
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    padding: 150px 5px 0px 5px;
-}
-#main h1{
-    font-size: 32px;
-    font-weight: 900;
-    color:#1d1d1d;
-    background-color: #fccc8385;
-}
 #footer{
     border-top: 3px solid #000;
     }
@@ -142,12 +128,9 @@
     text-decoration:none;
     color: #000;
 }
-
-
 #footer p{
     margin: 6px;
  }
-
 #footer form input{
     margin: 6px;
     padding: 4px;
@@ -169,8 +152,9 @@
     background-size:cover;
     background-position:center;
     padding: 5% 25% 0 25%;
-}.headerindex h1{
-    font-size: 32px;
+}
+.headerindex h1{
+    font-size: 2rem;
     font-weight: 900;
     color:#1d1d1d;
     text-align: center;
@@ -186,7 +170,7 @@
         padding: 7% 25% 0 25%;
     }
     .headerindex h1{
-        font-size: 18px;
+        font-size: 1rem;
 }
 
 }
@@ -261,36 +245,6 @@ button:hover{
 }
 #section3 iframe{
     justify-items: center;
-
     padding:5px;
     border: 3px solid #000;
-}
-#section3 .carta{
-    width: 40%;
-    height: 200px;
-    display:inline-block;
-    background-color: #ffb0ff;
-    border: 3px solid #73dddd;
-    border-radius: 15px;
-}
-#section3 .carta:hover{
-    background-color: #ff87b0;
-    border: 3px solid #73dddd;
-}
-#section3 .carta1{
-    width: 40%;
-    height: 200px;
-    display:inline-block;
-    background-color: #fccc83;
-    border: 3px solid #73dddd;
-    border-radius: 15px;
-}
-#section3 .carta1:hover{
-    background-color: #ffa800;
-    border: 3px solid #73dddd;
-    border-radius: 15px;
-}
-#section3 a{
-    text-decoration: none;
-    color: #1d1d1d;
 }
