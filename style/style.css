@@ -9,11 +9,11 @@
     display: flex;
     align-items:flex-start;
     flex: 1;
-    padding-top: 4px;
+    padding-top: 0.25rem;
     justify-content:left;
     background-color: rgba(255, 193, 7);
     opacity:0.8;
-    height:40px;
+    height:2.5rem;
     width: 100%;
     top:0;
     position:fixed;
@@ -24,6 +24,7 @@
     justify-content: space-between;
     flex:0.7;
     list-style: none;
+    line-height: initial;
 }
 .navBackground li {
     display: inline-block;
@@ -31,7 +32,7 @@
 }
 .navBackground a {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 700;
     color:#000;
 }
@@ -44,71 +45,45 @@
 }
 .navBackground ul ul li {
     display: block;
-    width:90%;
-    padding: 5px;
+    width:100%;
+    padding: 0.25rem;
 }
 .navBackground ul ul li a {
     color: #000;
 }
-
 .navBackground ul li:hover ul {
     position: absolute;
     display:block;
     background-color: rgba(255, 193, 7);
+    padding-left: initial;
 }
 @media (max-width:768px){
     .navBackground {
-        display: flex;
-        align-items:flex-start;
-        flex: 1;
-        padding-top: 2px;
-        justify-content:left;
-        background-color: rgba(255, 193, 7);
-        opacity:0.8;
-        height:25px;
-        width: 100%;
-        top:0;
-        position:fixed;
-        z-index:98;
+        padding-top: 0.1rem;
+        height:1.6rem; 
         }
-    .navBackground ul {
-        display: flex;
-        justify-content: space-between;
-        flex:0.7;
-        list-style: none;
-    }
-    .navBackground li {
-        display: inline-block;
-        position:relative;
-    }
     .navBackground a {
-        text-decoration: none;
-        font-size: 0.7em;
-        font-weight: 700;
-        color:#000;
-    }
-    .navBackground a:hover{
-        color: #5782e8;
-    }
-    .navBackground ul ul {
-        position: relative;
-        display: none;
+        font-size: 1rem;
     }
     .navBackground ul ul li {
         display: block;
         width:90%;
-        padding: 2px;
+        padding: 0.125rem;
     }
-    .navBackground ul ul li a {
-        color: #000;
+}
+@media (max-width:576px){
+    .navBackground {
+        padding-top: 0.05rem;
+        height:1.2rem; 
+        }
+    .navBackground a {
+        font-size: 0.5rem;
     }
-    
-    .navBackground ul li:hover ul {
-        position: absolute;
-        display:block;
-        background-color: rgba(255, 193, 7);
+    .navBackground ul ul li {
+        display: block;
+        width:80%;
+        padding: 0.1rem;
     }
-
 }
 #footer{
     border-top: 3px solid #000;
@@ -141,12 +116,14 @@
  #footer form input.button:hover{
     background-color: #000;
     Border:1px solid #fff;
-    color:#fff
+    color:#fff;
+    transition: 2s;
+    transform: scale(1.1);
  }
  
 /* index */
 .headerindex{
-    height:500px;
+    height:31.5rem;
     width: auto;    
     background-image: url(../img/banner.jpg);
     background-size:cover;
@@ -160,19 +137,23 @@
     text-align: center;
     
 }
-@media (max-width:768px){
+@media (max-width:767px){
     .headerindex{
-        height:300px;
-        width: auto;    
-        background-image: url(../img/banner.jpg);
-        background-size:cover;
-        background-position:center;
+        height:21rem; 
         padding: 7% 25% 0 25%;
     }
     .headerindex h1{
         font-size: 1rem;
 }
-
+}
+@media (max-width:576px){
+    .headerindex{
+        height:10.5rem; 
+        padding: 7% 25% 0 25%;
+    }
+    .headerindex h1{
+        font-size: 0.7rem;
+}
 }
 button{
         padding: 5px;
@@ -183,11 +164,13 @@ button{
 button:hover{
     background-color: #000;
     Border:1px solid #fff;
-    color:#fff;    
+    color:#fff;
+    transition: 2s;
+    transform: scale(1.1);    
 }
 /* aboutMe */
 #section2 .aboutme2{
-    width: 65%;
+    width: 60%;
     padding:20px 15px 15px 70px;
     display:inline-block;
 }
@@ -208,9 +191,22 @@ button:hover{
     padding-left: 5px;
 }
 #section2 .pesca img{
-    height:250px;
+    height:15rem;
     width: auto;
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 2rem;
+}
+@media (max-width:576px){
+    #section2 .aboutme2{
+        width: 90%;
+        padding:5px 2px 2px 7px;
+        display:block;
+    }
+    #section2 .pesca img{
+        display: block;
+}
 }
 /* juegos y experimentos */
 #section3{
