@@ -1,0 +1,34 @@
+#footer{
+    border-top: 3px solid $colorTexto;
+    img{
+        width: 20px;
+    }
+    ul{
+        margin: 6px;
+        list-style: none;
+        color: $colorTexto;
+        li a{
+            margin: 6px;
+            text-decoration:none;
+            color: $colorTexto;
+        }
+    }
+    p{
+        margin: 6px;
+    }
+    form input{
+        margin: 6px;
+        padding: 4px;
+        height: 30px;
+        background-color: #fff;
+        border:1px solid #000;
+        &.button:hover{
+            background-color: #000;
+            border:1px solid #fff;
+            color:#fff;
+            transition: 2s;
+            transform: scale(1.1);
+        }     
+    
+    }
+}

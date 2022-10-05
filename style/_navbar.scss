@@ -1,0 +1,52 @@
+.navBackground {
+    display: flex;
+    align-items:flex-start;
+    flex: 1;
+    padding-top: 0.25rem;
+    justify-content:left;
+    background-color: $colorNaranja;
+    opacity:0.8;
+    height:2.5rem;
+    width: 100%;
+    top:0;
+    position:fixed;
+    z-index:99;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex:0.7;
+        list-style: none;
+        line-height: initial;
+        ul{
+            position: relative;
+            display: none;
+            li{
+                display: block;
+                width:100%;
+                padding: 0.25rem;
+                a{
+                    color: $colorTexto;
+                }
+            }
+        }
+        li:hover ul{
+            position: absolute;
+            display:block;
+            background-color: $colorNaranja;
+            padding-left: initial;
+        }
+    }
+    li{
+        display: inline-block;
+    position:relative;
+    }
+    a {
+        text-decoration: none;
+        font-size: $tamanoTexto;
+        font-weight: 700;
+        color:$colorTexto;
+        :hover{
+            color: $colorAnimacion;
+        }
+    }
+} 

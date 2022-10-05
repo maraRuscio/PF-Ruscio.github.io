@@ -1,0 +1,34 @@
+@mixin mostrar {
+    display: inline-block;
+}
+#section2{
+    .aboutme2{
+        @include mostrar;
+        width: 60%;
+        padding:20px 15px 15px 70px;
+        p{
+            @include mostrar;
+            padding-bottom: 1rem;;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+    }
+    h2{
+        padding-top: 1em;
+        padding-left: 1em;
+    }
+    .pesca{
+        @include mostrar;
+        width: 30%;
+        height: auto;
+        padding-left: 5px;
+        img{
+        height:15rem;
+        width: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; 
+        padding-bottom: 2rem;
+        }
+    }
+}
