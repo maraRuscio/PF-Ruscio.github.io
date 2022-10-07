@@ -1,2 +1,2 @@
-# PreEntrega2-Ruscio
-Segunda entrega del curso desarrollador Web utilizando Boostrap, grid y flexbox
+# PreEntrega3-Ruscio
+Tercera entrega del curso desarrollador Web utilizando Boostrap, grid y flexbox
