@@ -1,3 +1,7 @@
+@mixin mostrar {
+    display: inline-block;
+}
+
 #section3{
     margin: 15px 40px;
     h2{
@@ -10,14 +14,14 @@
     .textstd{
         width: 60%;
         padding:20px 5px 5px 70px;
-        display:inline-block;
+        ;
         p{
-            display: inline-block;
+            @include mostrar;
             padding-bottom: 1rem;;
         }
     }
     .imgstd{
-        display:inline-block;
+        @include mostrar;
         width: 30%;
         height: auto;
         padding-left: 5px;

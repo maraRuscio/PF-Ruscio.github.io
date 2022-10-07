@@ -15,7 +15,19 @@
         height:21rem; 
         padding: 7% 25% 0 25%;
         h1{
-            font-size: $tamanoTexto*(2/3);
+            font-size: $tamanoTexto*calc(2 / 3);
+        }
+    }
+    #section2{
+        .aboutme2{
+            display:block;
+        }
+        .pesca{
+            padding:1.1rem 1rem 1rem 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
         }
     }
 } 
@@ -24,7 +36,7 @@
         padding-top: 0.05rem;
         height:1.2rem; 
         a {
-            font-size: $tamanoTexto/(3);
+            font-size: calc($tamanoTexto / (3));
         }
         ul ul li {
             display: block;
@@ -41,12 +53,14 @@
     }
     #section2{
         .aboutme2{
-            width: 90%;
-            padding:5px 2px 2px 7px;
             display:block;
         }
-        .pesca img{
-            display: block;
+        .pesca{
+            padding:1.1rem 1rem 1rem 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
         }
     }
 }

@@ -123,12 +123,9 @@ button:hover {
 }
 
 #section2 .aboutme2 {
-  display: inline-block;
-  width: 60%;
-  padding: 20px 15px 15px 70px;
+  padding: 1.1rem 1rem 1rem 4rem;
 }
 #section2 .aboutme2 p {
-  display: inline-block;
   padding-bottom: 1rem;
   -webkit-margin-before: 0em;
           margin-block-start: 0em;
@@ -140,17 +137,14 @@ button:hover {
   padding-left: 1em;
 }
 #section2 .pesca {
-  display: inline-block;
-  width: 30%;
-  height: auto;
-  padding-left: 5px;
+  padding: 1.1rem 1rem 1rem 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 #section2 .pesca img {
-  height: 15rem;
-  width: auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  width: 15.5rem;
+  height: auto;
   padding-bottom: 2rem;
 }
 
@@ -169,7 +163,6 @@ button:hover {
 #section3 .textstd {
   width: 60%;
   padding: 20px 5px 5px 70px;
-  display: inline-block;
 }
 #section3 .textstd p {
   display: inline-block;
@@ -211,6 +204,16 @@ button:hover {
   .headerindex h1 {
     font-size: 1rem;
   }
+  #section2 .aboutme2 {
+    display: block;
+  }
+  #section2 .pesca {
+    padding: 1.1rem 1rem 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 @media (max-width: 576px) {
   .navBackground {
@@ -233,11 +236,13 @@ button:hover {
     font-size: 0.7rem;
   }
   #section2 .aboutme2 {
-    width: 90%;
-    padding: 5px 2px 2px 7px;
     display: block;
   }
-  #section2 .pesca img {
-    display: block;
+  #section2 .pesca {
+    padding: 1.1rem 1rem 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
