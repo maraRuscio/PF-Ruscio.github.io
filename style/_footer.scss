@@ -7,10 +7,13 @@
         margin: 6px;
         list-style: none;
         color: $colorTexto;
-        li a{
+        li{
             margin: 6px;
+            color: $colorTexto;
+            a{
             text-decoration:none;
             color: $colorTexto;
+             }
         }
     }
     p{
