@@ -1,2 +1,2 @@
-# PreEntrega3-Ruscio
-Tercera entrega del curso desarrollador Web utilizando Boostrap, grid y flexbox
+# PF+Ruscio
+Trabajo final del curso de coderhouse de desarrollo web.
